@@ -1,13 +1,17 @@
 #body {
+  font-family: "Helvetica", sans-serif;
   margin: 10px;
+  h1 {
+    color: darkviolet;
+    font-weight: bold;
+  }
 }
+
 .left-block {
-  width: 60%;
+  width: 70%;
   float: left;
 }
 .right-block {
-  width: 40%;
+  width: 30%;
   float: left;
 }
-
-/* Background */
