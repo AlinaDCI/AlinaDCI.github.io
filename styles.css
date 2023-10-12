@@ -1,0 +1,11 @@
+#body {
+  margin: 10px;
+}
+.left-block {
+  width: 60%;
+  float: left;
+}
+.right-block {
+  width: 40%;
+  float: left;
+}
