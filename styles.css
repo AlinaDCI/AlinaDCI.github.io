@@ -1,5 +1,5 @@
 h1 {
-  color: rgb(50, 3, 70);
+  color: rgb(72, 5, 101);
   font-weight: bold;
   font-size: 24px;
 }
@@ -30,4 +30,33 @@ body {
 }
 .position {
   font-style: bold;
+}
+.solid-bar {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(242, 233, 246);
+  display: block;
+  margin-top: 10px;
+}
+.container {
+  display: flex;
+}
+
+.side-menu {
+  margin-top: 2px;
+  width: 200px;
+  background-color: rgb(242, 233, 246);
+}
+.side-menu a {
+  padding-top: 50px;
+  text-decoration: none;
+  color: rgb(72, 5, 101);
+}
+
+.side-menu a:hover {
+  color: rgb(72, 5, 101);
+}
+.main-content {
+  flex: 1; /* Allow the main content to expand and fill the available space */
+  padding: 20px; /* Add padding to the main content to create space */
 }
