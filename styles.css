@@ -1,61 +1,111 @@
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: rgb(32, 1, 32);
-  line-height: 1.5;
+  line-height: 1;
   margin: 0;
   padding: 20px;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.block {
-  width: 50%;
-  height: flex;
-  background-color: rgb(242, 233, 246);
-  text-align: left;
-  line-height: flex;
-}
-
-.full-width {
-  width: 100%;
-  background-color: rgb(242, 233, 246);
-  height: flex;
-  margin: 10px;
-}
-
 .header {
-  width: 100%;
   background-color: rgb(153, 143, 159);
-  font-family: Arial, sans-serif;
+  color: #fff; /* Text color for the header */
+  padding: 20px; /* Adjust the padding as needed */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease; /* For smooth animation */
+  z-index: 2;
+}
+
+.main-container {
+  margin-top: 120px;
   display: flex;
   justify-content: space-between;
-  text-align: left;
-  line-height: 100px;
-  margin: 10px;
-  height: 100px;
-  padding: 10px;
+  padding: 20px;
 }
-.right-image {
-  height: 300px;
-  margin: 10px;
+.left-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.right-container {
+  width: 49%;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.right-block {
+  margin-bottom: 20px;
 }
 
 .footer {
-  width: 100%;
   background-color: rgb(153, 143, 159);
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: space-between;
+  color: #fff; /* Text color for the footer */
+  padding: 20px;
   text-align: center;
-  line-height: 40px;
-  margin: 10px;
-  height: 40px;
-  padding: 10px;
+  height: 50px;
+}
+
+.left-section {
+  flex: 1; /* Distributes equal space for both sections */
+  margin-bottom: 20px;
+}
+
+.flip-container {
+  perspective: 1000px;
+  width: 100%; /* Make sure the container takes up the full width */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.image {
+  max-width: 100%; /* Limit the image width to the container's width */
+  height: auto;
+}
+
+.text {
+  font-size: 24px; /* Larger font size on hover */
+  color: rgb(32, 1, 32);
+  font-family: "cursive-font", cursive;
+  transition: font-size 0.3s, color 0.3s;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container:hover .flipper .text {
+  display: block;
 }
