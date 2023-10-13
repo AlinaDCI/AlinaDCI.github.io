@@ -2,8 +2,7 @@ body {
   margin-top: 180px;
   font-family: Arial, sans-serif;
   color: rgb(32, 1, 32);
-  line-height: 1.5;
-  font-size: 18 px;
+  line-height: 1.25;
 }
 
 .header {
@@ -22,6 +21,7 @@ body {
 .main-container {
   display: flex;
   justify-content: space-between;
+  font-size: 18px;
 }
 .left-container {
   width: 40%;
