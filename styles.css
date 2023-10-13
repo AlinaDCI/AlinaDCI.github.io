@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   color: rgb(32, 1, 32);
   line-height: 1.5;
+  font-size: 22px;
 }
 
 .header {
@@ -48,14 +49,14 @@ body {
 }
 
 .left-section {
-  height: 20%;
+  height: 40%;
 }
 
 .flip-container {
   perspective: 1000px;
   width: 100%; /* Make sure the container takes up the full width */
   overflow: hidden; /* Hide any overflow */
-  height: 80%;
+  height: 60%;
 }
 
 .flipper {
