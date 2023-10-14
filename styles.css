@@ -21,7 +21,7 @@ body {
 .main-container {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 18pxvw;
 }
 .left-container {
   width: 40%;
@@ -30,6 +30,7 @@ body {
   background-color: rgb(224, 219, 224);
   padding: 20px;
 }
+
 .right-container {
   width: 60%;
   background-color: rgb(224, 219, 224);
